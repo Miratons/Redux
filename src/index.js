@@ -1,15 +1,9 @@
-import { createStore, combineReducers } from 'redux'
-import * as filters from 'ducks/filters'
-import * as todos from 'ducks/todos'
+import React from 'react'
+import { render } from 'react-dom'
 
-const rootReducer = combineReducers({
-    todos: todos.default,
-    filters: filters.default
-})
-
-const store = createStore(rootReducer)
-
-console.log(store.getState())
-store.dispatch(todos.addTodo("Coucou"))
-store.dispatch(filters.setFilter("SHOW_COMPLETED"))
-console.log(store.getState().todos)
+render (
+    <div>
+        <h1>Hello World</h1>
+    </div>,
+    document.querySelector('#mount')
+)
