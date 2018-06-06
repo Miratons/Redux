@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 
 import List from 'components/List'
+import Form from 'components/Form'
 
 class App extends Component {
     constructor(props) {
@@ -13,6 +14,7 @@ class App extends Component {
             <div>
                 <p>Mon app</p>
                 <List />
+                <Form />
             </div>
         )
     }
