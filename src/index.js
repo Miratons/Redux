@@ -8,7 +8,7 @@ import App from 'components/App/App'
 import 'style.css'
 
 render (
-    <div>
+    <div id="content">
         <header>
             <h1>My TODO</h1>
         </header>

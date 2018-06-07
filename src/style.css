@@ -3,3 +3,8 @@ body {
     padding: 0 20px;
     font-family: Calibri
 }
+
+body #content {
+    width: 1024px;
+    margin: auto;
+}

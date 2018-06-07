@@ -1,6 +1,8 @@
 import React, { Component, Fragment } from 'react'
 import PropTypes from 'prop-types'
 
+import './Task.css'
+
 class Task extends Component {
 
     constructor(props) {

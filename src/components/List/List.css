@@ -1,3 +1,12 @@
+table {
+    width: 100%;
+}
+
+tr {
+    border: 0px;
+    background-color: #d2d2d2;
+} 
+
 tr.enable {
-    background-color: green;
+    background-color: #7cb37c;
 }
