@@ -28,10 +28,13 @@ class Form extends Component {
     }
 
     handleSubmit(e) {
-        this.props.addTodo(this.state.value)
-        this.setState({
-            value: ''
-        })
+        // check todo is not null
+        if (this.state.value.trim() !== '') {
+            this.props.addTodo(this.state.value)
+            this.setState({
+                value: ''
+            })
+        }
         e.preventDefault();
         e.stopPropagation();
     }
