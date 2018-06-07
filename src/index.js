@@ -5,9 +5,14 @@ import { Provider } from 'react-redux'
 import store from 'store'
 import App from 'components/App/App'
 
+import 'reset.css'
+import 'style.css'
+
 render (
     <div>
-        <h1>My TODO</h1>
+        <header>
+            <h1>My TODO</h1>
+        </header>
         <Provider store={store}>
             <App />
         </Provider>

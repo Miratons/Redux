@@ -1,5 +1,6 @@
 //Actions
 export const ADD_TODO = "my-todo/TODOS/ADD_TODO"
+export const DEL_TODO = "my-todo/TODOS/DEL_TODO"
 
 // Reducer
 const initial = {
@@ -17,6 +18,14 @@ export default function reducer (state = initial, action = {}) {
                     done: false
                 })
             }
+
+        case DEL_TODO:
+            let tab = [].concat(state.values)
+            tab.splice(action.index, 1)
+            return {
+                ...state,
+                values: tab
+            }
         
         default:
             return state
@@ -27,4 +36,9 @@ export default function reducer (state = initial, action = {}) {
 export const addTodo = (label) => ({
     type: ADD_TODO,
     label
+})
+
+export const delTodo = (index) => ({
+    type: DEL_TODO,
+    index
 })
