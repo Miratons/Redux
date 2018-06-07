@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 
 import List from 'components/List'
 import Form from 'components/Form'
+import Filter from 'components/Filter'
 
 class App extends Component {
     constructor(props) {
@@ -13,6 +14,7 @@ class App extends Component {
         return (
             <div>
                 <p>Mon app</p>
+                <Filter />
                 <List />
                 <Form />
             </div>

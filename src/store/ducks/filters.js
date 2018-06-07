@@ -4,7 +4,7 @@ export const SET_FILTER = 'my-todo/FILTERS/SET_FILTER'
 // Reducer
 const initial = {
     active: 'SHOW_ALL',
-    values: ['SHOW_ALL', 'SHWO_COMPLETED']
+    values: ['SHOW_ALL', 'SHOW_COMPLETED']
 }
 
 export default function reducer (state = initial, action = {}) {
